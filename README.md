@@ -2,8 +2,6 @@
 
 ### ✈️ Explore Places • Discover Stays • Create Memories
 
-> **WanderLust** is a full-stack travel listing platform inspired by modern vacation-rental applications, built with **Node.js, Express.js, MongoDB and EJS**.
-
 Discover beautiful destinations, explore available stays, view locations on interactive maps, upload property images, create your own listings and share your travel experiences through ratings and reviews.
 
 ---
