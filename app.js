@@ -48,7 +48,7 @@ const store = MongoStore.create({
   touchAfter: 24 * 3600
 });
 
-store.on("error", () => {
+store.on("error", (err) => {
   console.log("ERROR in MONGO SESSION STORE", err);
 });
 
@@ -60,14 +60,9 @@ const sessionOptions = {
     cookie: {
       expires: Date.now() + 1000 * 60 * 60 * 24 * 3,
       maxAge : 1000 * 60 * 60 * 24 * 3,
-      httpOnly: true
+      httpOnly: true,
     },
 };
-
-// app.get("/", (req, res) => {
-//   res.send("Hi, I am root");
-// });
-
 
 app.use(session(sessionOptions));
 app.use(flash());
@@ -95,6 +90,9 @@ app.get("/demouser", async(req, res) => {
   res.send(registeredUser);
 });
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
