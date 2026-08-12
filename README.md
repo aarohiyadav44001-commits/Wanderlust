@@ -14,21 +14,18 @@ https://wanderlust-kv3c.onrender.com
 > ⏳ **Note:** The application is deployed on Render's free tier. If the server has been inactive for some time, the first request may take approximately **30–60 seconds** to wake up.
 
 ---
+## 📌✨ Features
 
-# ✨ Features
-
-📌 Features
-🔐 User Authentication — Signup, Login, Logout using Passport.js (Local Strategy)
-🏠 Listings CRUD — Create, Read, Update, Delete travel listings with image upload
-🗺️ Interactive Map — Mapbox GL JS with real-time geocoding on every listing page
-⭐ Review System — Star ratings (1–5) + written comments with author-only delete
-🔍 Search & Filter — Location-based search + 10 category filters
-🖼️ Cloud Image Upload — Cloudinary + Multer for persistent image storage
-📱 Responsive Design — Bootstrap 5 grid, mobile & desktop friendly
-🔒 Authorization — Owner-only edit/delete for listings and reviews
-✅ Validation — Joi server-side + Bootstrap client-side form validation
-💾 Session Persistence — Sessions stored in MongoDB via connect-mongo
----
+- 🔐 **Authentication** — Signup, Login & Logout with Passport.js
+- 🏠 **Listings CRUD** — Create, Read, Update & Delete listings with image upload
+- 🗺️ **Interactive Maps** — Mapbox GL JS with location geocoding
+- ⭐ **Reviews & Ratings** — 1–5 star ratings with written reviews
+- 🔍 **Search & Filter** — Location search with 10 category filters
+- 🖼️ **Cloud Image Upload** — Cloudinary + Multer for image storage
+- 📱 **Responsive UI** — Bootstrap 5 responsive design
+- 🔒 **Authorization** — Owner-only listing & review actions
+- ✅ **Validation** — Joi server-side + Bootstrap client-side validation
+- 💾 **Session Persistence** — MongoDB sessions using connect-mongo
 
 # 🧰 Tech Stack
 
