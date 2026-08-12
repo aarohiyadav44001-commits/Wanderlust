@@ -17,96 +17,17 @@ https://wanderlust-kv3c.onrender.com
 
 # ✨ Features
 
-## 🔐 Authentication & User Management
-
-WanderLust includes a complete user authentication system powered by **Passport.js** and its Local Strategy.
-
-* 📝 User signup
-* 🔑 Login
-* 🚪 Logout
-* 🔒 Protected routes
-* 👤 Session-based authentication
-* 💾 Persistent sessions using MongoDB
-* 🛡️ Authorization for protected actions
-
----
-
-## 🏡 Listing Management
-
-Users can manage travel/property listings through complete CRUD functionality.
-
-* ➕ Create new listings
-* 👀 Browse all listings
-* 📄 View detailed listing information
-* ✏️ Edit existing listings
-* 🗑️ Delete listings
-* 🖼️ Upload listing images
-* 👑 Only listing owners can edit or delete their listings
-
----
-
-## 🗺️ Interactive Map Integration
-
-Every listing can display its location through an interactive **Mapbox GL JS** map.
-
-The application uses geocoding to convert a location entered by the user into coordinates that can be displayed on the map.
-
-📍 This gives users a visual way to understand the location of each property.
-
----
-
-## ⭐ Reviews & Ratings
-
-Users can share their experience through the built-in review system.
-
-* ⭐ Rating system from **1–5 stars**
-* 💬 Written comments
-* 🔐 Authentication required for submitting reviews
-* 👤 Review author information
-* 🗑️ Author-only review deletion
-
----
-
-## ☁️ Cloud Image Upload
-
-Listing images are uploaded using **Multer** and stored on **Cloudinary**.
-
-This provides persistent cloud storage for images instead of relying on the local server filesystem.
-
----
-
-## 📱 Responsive Interface
-
-The frontend uses **Bootstrap 5.3** along with custom CSS to provide a responsive experience across:
-
-* 💻 Desktop
-* 📱 Mobile
-* 📟 Tablet
-
----
-
-## 🛡️ Validation & Authorization
-
-The application contains multiple levels of validation and access control.
-
-* ✅ Joi server-side validation
-* ✅ Bootstrap client-side validation
-* 🔐 Authentication middleware
-* 👑 Listing owner authorization
-* 👤 Review author authorization
-* ⚠️ Custom error handling
-* 🧩 Async error handling
-
----
-
-## 💾 Session Persistence
-
-User sessions are maintained using:
-
-**Express Session + Connect Mongo**
-
-Sessions are stored in MongoDB so authentication can persist beyond a single server request.
-
+📌 Features
+🔐 User Authentication — Signup, Login, Logout using Passport.js (Local Strategy)
+🏠 Listings CRUD — Create, Read, Update, Delete travel listings with image upload
+🗺️ Interactive Map — Mapbox GL JS with real-time geocoding on every listing page
+⭐ Review System — Star ratings (1–5) + written comments with author-only delete
+🔍 Search & Filter — Location-based search + 10 category filters
+🖼️ Cloud Image Upload — Cloudinary + Multer for persistent image storage
+📱 Responsive Design — Bootstrap 5 grid, mobile & desktop friendly
+🔒 Authorization — Owner-only edit/delete for listings and reviews
+✅ Validation — Joi server-side + Bootstrap client-side form validation
+💾 Session Persistence — Sessions stored in MongoDB via connect-mongo
 ---
 
 # 🧰 Tech Stack
