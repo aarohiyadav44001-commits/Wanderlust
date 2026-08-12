@@ -364,6 +364,15 @@ This project is licensed under the **ISC License**.
 
 ---
 
+<img width="1894" height="872" alt="Screenshote1" src="https://github.com/user-attachments/assets/384f6068-961f-4a3c-85ba-78060f382939" />
+<img width="1899" height="920" alt="Screenshot3" src="https://github.com/user-attachments/assets/45d9e476-3e29-407c-b6be-716196cc1eb9" />
+<img width="1898" height="880" alt="Screenshot4" src="https://github.com/user-attachments/assets/c70777ac-308c-42e7-a27b-fd4ff32c2118" />
+<img width="1897" height="881" alt="Screenshot6" src="https://github.com/user-attachments/assets/96d05647-330b-472a-9252-bcabdc096173" />
+
+
+
+
+
 <div align="center">
 
 # 🌍 WanderLust
