@@ -302,41 +302,41 @@ Before running the project locally, install or create:
 
 ```bash
 git clone https://github.com/ajayyaday4522/wanderlust.git
-```
-
-Then move into the project directory:
-
-```bash
 cd wanderlust
 ```
-
----
-
 ## 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
-
-This installs all dependencies listed in `package.json`.
-
----
-
 ## 3️⃣ Create Environment File
-
-Create a `.env` file in the project's root directory.
 
 ```env
 ATLASDB_URL=mongodb://127.0.0.1:27017/wanderlust
-
 CLOUD_NAME=your_cloudinary_cloud_name
 CLOUD_API_KEY=your_cloudinary_api_key
 CLOUD_API_SECRET=your_cloudinary_api_secret
-
 MAP_TOKEN=your_mapbox_token
-
 SECRET=your_session_secret
 ```
+
+> 🔒 **Security:** Keep your `.env` file private and add it to `.gitignore`. Never commit API keys, passwords or secret tokens to GitHub.
+
+---
+
+## 4️⃣ Seed the Database
+```bash
+node init/index.js
+```
+## 5️⃣ Start the Server
+```bash
+nodemon app.js
+```
+## 6️⃣ Open the Application
+```text
+http://localhost:8080/listings
+```
+🎉 **WanderLust is now running locally!**
 
 ---
 
@@ -351,160 +351,17 @@ SECRET=your_session_secret
 | `MAP_TOKEN`        | Mapbox access token                |
 | `SECRET`           | Secret key used for sessions       |
 
-> 🔒 **Security:** Keep your `.env` file private and add it to `.gitignore`. Never commit API keys, passwords or secret tokens to GitHub.
-
----
-
-## 4️⃣ Seed the Database
-
-To insert the project's sample listings into the database:
-
-```bash
-node init/index.js
-```
-
-This step is **optional**.
-
-If you already have data in your database, you can skip it.
-
----
-
-## 5️⃣ Start the Server
-
-Using Nodemon:
-
-```bash
-nodemon app.js
-```
-
-Or using Node directly:
-
-```bash
-node app.js
-```
-
----
-
-## 6️⃣ Open the Application
-
-Once the server is running, open:
-
-```text
-http://localhost:8080/listings
-```
-
-🎉 **WanderLust is now running locally!**
-
----
-
 # 🚀 Deployment
 
 WanderLust is deployed on **Render**.
-
-## ☁️ Render Deployment Steps
-
 ### 1. Push the project to GitHub
-
-Upload your latest project code to GitHub.
-
 ### 2. Create a Web Service
-
-Create a new Web Service on Render and connect the GitHub repository.
-
-### 3. Set Build Command
-
-```bash
-npm install
-```
-
-### 4. Set Start Command
-
-```bash
-node app.js
-```
-
+### 3. Set Build Command : npm install
+### 4. Set Start Command : node app.js
 ### 5. Add Environment Variables
-
 Add all required environment variables in Render's **Environment** section:
-
-```text
-ATLASDB_URL
-CLOUD_NAME
-CLOUD_API_KEY
-CLOUD_API_SECRET
-MAP_TOKEN
-SECRET
-```
-
 ### 6. Configure MongoDB Atlas
-
 Make sure MongoDB Atlas allows the required Render outbound access through its **Network Access** settings.
-
-After successful deployment, Render will provide the live application URL.
-
----
-
-# 🌐 Live Deployment
-
-🚀 **WanderLust is live at:**
-
-https://wanderlust-427v.onrender.com/listings
-
-> Because the application uses Render's free hosting tier, the service may sleep when inactive and require some time to wake up.
-
----
-
-# 📚 What This Project Demonstrates
-
-This project brings together multiple full-stack development concepts.
-
-### 🖥️ Frontend
-
-* HTML5
-* CSS3
-* Bootstrap 5
-* EJS templating
-* JavaScript
-* Responsive design
-* Client-side validation
-
-### ⚙️ Backend
-
-* Node.js
-* Express.js
-* RESTful architecture
-* MVC pattern
-* CRUD operations
-* Middleware
-* Async/Await
-* Error handling
-
-### 🗄️ Database
-
-* MongoDB
-* MongoDB Atlas
-* Mongoose
-* Schema design
-* Relationships
-* Population
-
-### 🔐 Authentication
-
-* Passport.js
-* Local Strategy
-* passport-local-mongoose
-* Sessions
-* Authentication middleware
-* Authorization middleware
-
-### ☁️ External Services
-
-* Cloudinary
-* Mapbox
-* MongoDB Atlas
-* Render
-
----
 
 # 🗺️ Application Flow
 
@@ -558,44 +415,18 @@ Listing
 
 WanderLust currently supports **10 listing categories**:
 
-* 🔥 Trending
-* 🛏️ Rooms
-* 🏙️ Iconic Cities
-* 🏔️ Mountains
-* 🏰 Castles
-* 🏊 Amazing Pools
-* ⛺ Camping
-* 🚜 Farms
-* 🛖 Domes
-* 🚤 Boats
-
----
-
-# 🔮 Future Improvements
-
-Some features that can be introduced in future versions:
-
-* ❤️ Wishlist / Favorites
-* 💳 Online booking
-* 💰 Payment gateway integration
-* 📧 Email notifications
-* 👤 User profile dashboard
-* 📊 Host analytics
-* 💬 Real-time messaging
-* 🔔 Booking notifications
-* 🌙 Dark mode
-* 📍 Advanced location-based search
-
+* 🔥 Trending * 🛏️ Rooms * 🏙️ Iconic Cities * 🏔️ Mountains * 🏰 Castles * 🏊 Amazing Pools
+* ⛺ Camping* 🚜 Farms * 🛖 Domes * 🚤 Boats
 ---
 
 # 👨‍💻 Author
 
-## Ajay Yadav
+## Kareena Yadav
 
 🎓 Full-Stack Web Development Project
 
 🐙 **GitHub:**
-https://github.com/ajayyaday4522
+https://github.com/aarohiyadav44001
 
 ---
 
